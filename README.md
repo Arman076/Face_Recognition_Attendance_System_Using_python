@@ -6,3 +6,8 @@ which is productively used for Object Detection. This Algorithm is based on a Ma
 i hope this project to help you learning and developing new thing
 i am request you to if you serious your study plz write code line by line and then you creating project 
 i hope you are knowledege many how reating project and how deploy project
+
+Software Requirement:
+visual studio
+mysql database
+
