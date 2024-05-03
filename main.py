@@ -1,4 +1,3 @@
-
 from tkinter import*
 from tkinter import ttk
 from PIL import Image,ImageTk
@@ -10,7 +9,9 @@ from attendance import Attendance
 from developer import Developer
 from helpsupport import Help
 
-class Face_recogonition:
+
+
+class face_recogonitions:
     def __init__(self,root):
         self.root=root
         self.root.geometry("1530x710+0+0")
@@ -47,7 +48,7 @@ class Face_recogonition:
         bg_img=Label(self.root,image=self.photoimg3)
         bg_img.place(x=0,y=130,width=1530,height=710)
 
-        title_lbl=Label(bg_img,text="FACE RECOGNITION ATTENDANCE BASE SS\YSTEM SOFTWARE",font=("times new roman",35,"bold"),bg="white",fg="red")
+        title_lbl=Label(bg_img,text="FACE RECOGNITION ATTENDANCE BASE SYSTEM SOFTWARE",font=("times new roman",35,"bold"),bg="white",fg="red")
         title_lbl.place(x=0,y=0,width=1530,height=45)
 
         #-----------------------BUTTON IMAGE-------------------------------
@@ -126,7 +127,7 @@ class Face_recogonition:
 
         #-----------------------DEVELOPER IMAGE-------------------------------
 
-        img10=Image.open(r"FARMAN PHOTOS.jpg")
+        img10=Image.open(r"tauheed.jpeg")
         img10=img10.resize((220,220),Image.LANCZOS)
         self.photoimg10=ImageTk.PhotoImage(img10)
         
@@ -179,7 +180,7 @@ class Face_recogonition:
         self.app=Help(self.new_window)
     
     def Close(self):
-        root.destroy()
+        self.root.destroy()
         
 
         #------------------------------------------------------ERROR PROBLEM----------------------------------------
@@ -190,6 +191,6 @@ class Face_recogonition:
     
 if __name__=="__main__":
     root=Tk()
-    obj=Face_recogonition(root)
+    obj=face_recogonitions(root)
     root.mainloop()
 
